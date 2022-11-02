@@ -26,7 +26,7 @@ const UserForm = props => {
                 <div>
                     {/* the onchange names the event that will trigger my setter (note the dot notation) */}
                     <label>First Name:</label>
-                    <input type='text' onChange={ (e) =>setfName(e.target.value)
+                    <input type='text' onChange={ (e) => setfName(e.target.value)
                     } value={fName}/>
                 </div><br></br>
                 <div>
