@@ -49,7 +49,10 @@ const UserForm = props => {
                     <input type='password' onChange={ (e) =>setConfPassword(e.target.value)
                     } value={confPassword}/>
                 </div><br></br>
-                <input type='submit' value='Create a User!'/>
+                {
+                    fName && lName && email && password && confPassword ?
+                    <input type='submit' value='Create a User!'/> : <input type='submit' value='Create a User!' disabled/>
+                }
             </form>
             <div>
                 {/* not sure why they had me do this, but it demonstrates in the document that my component's hooks are working! */}
